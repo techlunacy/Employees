@@ -97,6 +97,22 @@ namespace CTraderEmployeesTests
             var records = File.ReadLines(_dataStore.Path);
             Assert.AreEqual(ExpectedFormattedRecordSet, records.ElementAt(0));
         }
+
+        [TestMethod]
+        public void RecordExists()
+        {
+            _dataStore.SaveRecord(_currentEmployeeModel);
+            Assert.IsTrue(_dataStore.IdExists(_currentEmployeeModel.Id));
+        }
+        [TestMethod]
+        public void RemoveRecord()
+        {
+            _dataStore.SaveRecord(_currentEmployeeModel);
+            Assert.IsTrue(_dataStore.IdExists(_currentEmployeeModel.Id));
+            _dataStore.RemoveRecordById(_currentEmployeeModel.Id);
+            Assert.IsFalse(_dataStore.IdExists(_currentEmployeeModel.Id));
+        }
+
         [TestMethod]
         public void UpdateEmployee()
         {

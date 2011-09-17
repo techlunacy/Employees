@@ -23,6 +23,7 @@ namespace CTraderEmployeesTests
             stream.Close();
             _validDataStore = new DataStore { Path = ExistingFile };
         }
+
         [TestMethod]
         public void ConfigExists()
         {
