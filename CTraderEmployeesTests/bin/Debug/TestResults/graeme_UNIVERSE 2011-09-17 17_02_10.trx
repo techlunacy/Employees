@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="7ce7aaaa-b0a9-4b3d-bda0-ce3936c9cb7f" name="graeme@UNIVERSE 2011-09-17 17:02:10" runUser="Universe\graeme" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="e920189b-fed0-46c2-83c6-cc62807d3a99">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="graeme_UNIVERSE 2011-09-17 17_02_10" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-09-17T17:02:10.1366500+10:00" queuing="2011-09-17T17:02:10.4276666+10:00" start="2011-09-17T17:02:10.7116829+10:00" finish="2011-09-17T17:02:11.1497079+10:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="8" executed="8" passed="8" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="CreateFile" storage="c:\users\graeme\documents\visual studio 2010\projects\ctraderemployees\ctraderemployeestests\bin\debug\ctraderemployeestests.dll" id="238caa62-8e4b-18f5-e130-74cbaddee443">
+      <Execution timeOut="1800000" id="14673416-b39d-403c-91f6-94df53baf43f" />
+      <TestMethod codeBase="C:/Users/graeme/documents/visual studio 2010/Projects/CTraderEmployees/CTraderEmployeesTests/bin/Debug/CTraderEmployeesTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CTraderEmployeesTests.ConfigTests, CTraderEmployeesTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreateFile" />
+    </UnitTest>
+    <UnitTest name="InvalidPath" storage="c:\users\graeme\documents\visual studio 2010\projects\ctraderemployees\ctraderemployeestests\bin\debug\ctraderemployeestests.dll" id="b8e3a127-60fb-d15a-38dd-91050e14e18a">
+      <Execution timeOut="1800000" id="953c20f8-fdd0-42da-9950-194dc82f3fe1" />
+      <TestMethod codeBase="C:/Users/graeme/documents/visual studio 2010/Projects/CTraderEmployees/CTraderEmployeesTests/bin/Debug/CTraderEmployeesTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CTraderEmployeesTests.ConfigTests, CTraderEmployeesTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="InvalidPath" />
+    </UnitTest>
+    <UnitTest name="SaveEmployee" storage="c:\users\graeme\documents\visual studio 2010\projects\ctraderemployees\ctraderemployeestests\bin\debug\ctraderemployeestests.dll" id="b423e4e4-8842-b410-2a06-1396b6889675">
+      <Execution timeOut="1800000" id="44c7ae76-3c75-4434-99d6-e21499dd2aeb" />
+      <TestMethod codeBase="C:/Users/graeme/documents/visual studio 2010/Projects/CTraderEmployees/CTraderEmployeesTests/bin/Debug/CTraderEmployeesTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CTraderEmployeesTests.EmployeeTests, CTraderEmployeesTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SaveEmployee" />
+    </UnitTest>
+    <UnitTest name="RemoveFile" storage="c:\users\graeme\documents\visual studio 2010\projects\ctraderemployees\ctraderemployeestests\bin\debug\ctraderemployeestests.dll" id="34939d99-5931-4bf7-0c08-87ffefe3fe7a">
+      <Execution timeOut="1800000" id="96b22386-5cb5-47a5-9960-3d8f35586908" />
+      <TestMethod codeBase="C:/Users/graeme/documents/visual studio 2010/Projects/CTraderEmployees/CTraderEmployeesTests/bin/Debug/CTraderEmployeesTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CTraderEmployeesTests.ConfigTests, CTraderEmployeesTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="RemoveFile" />
+    </UnitTest>
+    <UnitTest name="EmployeeHasFields" storage="c:\users\graeme\documents\visual studio 2010\projects\ctraderemployees\ctraderemployeestests\bin\debug\ctraderemployeestests.dll" id="704be9be-c4fa-23ad-07df-cfc9e4bfa6e7">
+      <Execution timeOut="1800000" id="0da490b5-7ffb-4a67-a30c-8e84fdcbe6f1" />
+      <TestMethod codeBase="C:/Users/graeme/documents/visual studio 2010/Projects/CTraderEmployees/CTraderEmployeesTests/bin/Debug/CTraderEmployeesTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CTraderEmployeesTests.EmployeeTests, CTraderEmployeesTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EmployeeHasFields" />
+    </UnitTest>
+    <UnitTest name="EmployeeExists" storage="c:\users\graeme\documents\visual studio 2010\projects\ctraderemployees\ctraderemployeestests\bin\debug\ctraderemployeestests.dll" id="757e021e-7e12-bd83-283a-0c43141c041d">
+      <Execution timeOut="1800000" id="f5fb588b-522f-4b6f-82b8-49341d4c4aba" />
+      <TestMethod codeBase="C:/Users/graeme/documents/visual studio 2010/Projects/CTraderEmployees/CTraderEmployeesTests/bin/Debug/CTraderEmployeesTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CTraderEmployeesTests.EmployeeTests, CTraderEmployeesTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EmployeeExists" />
+    </UnitTest>
+    <UnitTest name="ConfigHasPath" storage="c:\users\graeme\documents\visual studio 2010\projects\ctraderemployees\ctraderemployeestests\bin\debug\ctraderemployeestests.dll" id="750b2ed7-8531-78d8-975c-8b53fd505641">
+      <Execution timeOut="1800000" id="420545c1-6c39-4766-89b8-d168941e8cc4" />
+      <TestMethod codeBase="C:/Users/graeme/documents/visual studio 2010/Projects/CTraderEmployees/CTraderEmployeesTests/bin/Debug/CTraderEmployeesTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CTraderEmployeesTests.ConfigTests, CTraderEmployeesTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ConfigHasPath" />
+    </UnitTest>
+    <UnitTest name="ConfigExists" storage="c:\users\graeme\documents\visual studio 2010\projects\ctraderemployees\ctraderemployeestests\bin\debug\ctraderemployeestests.dll" id="5dafe0aa-4690-22d9-56bc-90a1639b3f6b">
+      <Execution timeOut="1800000" id="86aa934e-c0d8-457d-8cf2-6fec13c62807" />
+      <TestMethod codeBase="C:/Users/graeme/documents/visual studio 2010/Projects/CTraderEmployees/CTraderEmployeesTests/bin/Debug/CTraderEmployeesTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CTraderEmployeesTests.ConfigTests, CTraderEmployeesTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ConfigExists" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="5dafe0aa-4690-22d9-56bc-90a1639b3f6b" executionId="86aa934e-c0d8-457d-8cf2-6fec13c62807" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="750b2ed7-8531-78d8-975c-8b53fd505641" executionId="420545c1-6c39-4766-89b8-d168941e8cc4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="238caa62-8e4b-18f5-e130-74cbaddee443" executionId="14673416-b39d-403c-91f6-94df53baf43f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b8e3a127-60fb-d15a-38dd-91050e14e18a" executionId="953c20f8-fdd0-42da-9950-194dc82f3fe1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="34939d99-5931-4bf7-0c08-87ffefe3fe7a" executionId="96b22386-5cb5-47a5-9960-3d8f35586908" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="757e021e-7e12-bd83-283a-0c43141c041d" executionId="f5fb588b-522f-4b6f-82b8-49341d4c4aba" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="704be9be-c4fa-23ad-07df-cfc9e4bfa6e7" executionId="0da490b5-7ffb-4a67-a30c-8e84fdcbe6f1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b423e4e4-8842-b410-2a06-1396b6889675" executionId="44c7ae76-3c75-4434-99d6-e21499dd2aeb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="86aa934e-c0d8-457d-8cf2-6fec13c62807" testId="5dafe0aa-4690-22d9-56bc-90a1639b3f6b" testName="ConfigExists" computerName="UNIVERSE" duration="00:00:00.0397191" startTime="2011-09-17T17:02:10.7556854+10:00" endTime="2011-09-17T17:02:10.8696919+10:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="86aa934e-c0d8-457d-8cf2-6fec13c62807">
+    </UnitTestResult>
+    <UnitTestResult executionId="420545c1-6c39-4766-89b8-d168941e8cc4" testId="750b2ed7-8531-78d8-975c-8b53fd505641" testName="ConfigHasPath" computerName="UNIVERSE" duration="00:00:00.0038103" startTime="2011-09-17T17:02:10.8736921+10:00" endTime="2011-09-17T17:02:10.8846928+10:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="420545c1-6c39-4766-89b8-d168941e8cc4">
+    </UnitTestResult>
+    <UnitTestResult executionId="14673416-b39d-403c-91f6-94df53baf43f" testId="238caa62-8e4b-18f5-e130-74cbaddee443" testName="CreateFile" computerName="UNIVERSE" duration="00:00:00.0109742" startTime="2011-09-17T17:02:10.8886930+10:00" endTime="2011-09-17T17:02:10.9076941+10:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="14673416-b39d-403c-91f6-94df53baf43f">
+    </UnitTestResult>
+    <UnitTestResult executionId="953c20f8-fdd0-42da-9950-194dc82f3fe1" testId="b8e3a127-60fb-d15a-38dd-91050e14e18a" testName="InvalidPath" computerName="UNIVERSE" duration="00:00:00.0069761" startTime="2011-09-17T17:02:10.9116943+10:00" endTime="2011-09-17T17:02:10.9546968+10:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="953c20f8-fdd0-42da-9950-194dc82f3fe1">
+    </UnitTestResult>
+    <UnitTestResult executionId="96b22386-5cb5-47a5-9960-3d8f35586908" testId="34939d99-5931-4bf7-0c08-87ffefe3fe7a" testName="RemoveFile" computerName="UNIVERSE" duration="00:00:00.0125380" startTime="2011-09-17T17:02:10.9656974+10:00" endTime="2011-09-17T17:02:10.9786981+10:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="96b22386-5cb5-47a5-9960-3d8f35586908">
+    </UnitTestResult>
+    <UnitTestResult executionId="f5fb588b-522f-4b6f-82b8-49341d4c4aba" testId="757e021e-7e12-bd83-283a-0c43141c041d" testName="EmployeeExists" computerName="UNIVERSE" duration="00:00:00.0029142" startTime="2011-09-17T17:02:10.9936990+10:00" endTime="2011-09-17T17:02:10.9986993+10:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f5fb588b-522f-4b6f-82b8-49341d4c4aba">
+    </UnitTestResult>
+    <UnitTestResult executionId="0da490b5-7ffb-4a67-a30c-8e84fdcbe6f1" testId="704be9be-c4fa-23ad-07df-cfc9e4bfa6e7" testName="EmployeeHasFields" computerName="UNIVERSE" duration="00:00:00.0111784" startTime="2011-09-17T17:02:11.0096999+10:00" endTime="2011-09-17T17:02:11.0277009+10:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0da490b5-7ffb-4a67-a30c-8e84fdcbe6f1">
+    </UnitTestResult>
+    <UnitTestResult executionId="44c7ae76-3c75-4434-99d6-e21499dd2aeb" testId="b423e4e4-8842-b410-2a06-1396b6889675" testName="SaveEmployee" computerName="UNIVERSE" duration="00:00:00.0082313" startTime="2011-09-17T17:02:11.0397016+10:00" endTime="2011-09-17T17:02:11.0497022+10:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="44c7ae76-3c75-4434-99d6-e21499dd2aeb">
+    </UnitTestResult>
+  </Results>
+</TestRun>

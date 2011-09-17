@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="29e5151e-33af-493c-b525-141d3db62358" name="graeme@UNIVERSE 2011-09-17 17:30:56" runUser="Universe\graeme" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="e920189b-fed0-46c2-83c6-cc62807d3a99">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="graeme_UNIVERSE 2011-09-17 17_30_56" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-09-17T17:30:56.6023982+10:00" queuing="2011-09-17T17:30:57.0434234+10:00" start="2011-09-17T17:30:57.4114444+10:00" finish="2011-09-17T17:31:09.2901239+10:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="SaveEmployee" storage="c:\users\graeme\documents\visual studio 2010\projects\ctraderemployees\ctraderemployeestests\bin\debug\ctraderemployeestests.dll" id="b423e4e4-8842-b410-2a06-1396b6889675">
+      <Execution timeOut="1800000" id="0db35082-5a96-45a6-b406-f53263410ddf" />
+      <TestMethod codeBase="C:/Users/graeme/documents/visual studio 2010/Projects/CTraderEmployees/CTraderEmployeesTests/bin/Debug/CTraderEmployeesTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CTraderEmployeesTests.EmployeeTests, CTraderEmployeesTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SaveEmployee" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="b423e4e4-8842-b410-2a06-1396b6889675" executionId="0db35082-5a96-45a6-b406-f53263410ddf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="0db35082-5a96-45a6-b406-f53263410ddf" testId="b423e4e4-8842-b410-2a06-1396b6889675" testName="SaveEmployee" computerName="UNIVERSE" duration="00:00:11.5876573" startTime="2011-09-17T17:30:57.5064499+10:00" endTime="2011-09-17T17:31:09.1861179+10:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0db35082-5a96-45a6-b406-f53263410ddf">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method CTraderEmployeesTests.EmployeeTests.SaveEmployee threw exception: 
+System.IO.IOException: The process cannot access the file 'C:\Users\graeme\documents\visual studio 2010\Projects\CTraderEmployees\CTraderEmployeesTests\bin\Debug\TestResults\graeme_UNIVERSE 2011-09-17 17_30_56\Out\test.data' because it is being used by another process.
+TestCleanup method CTraderEmployeesTests.EmployeeTests.RemoveDatastore threw exception. System.IO.IOException: System.IO.IOException: The process cannot access the file 'C:\Users\graeme\documents\visual studio 2010\Projects\CTraderEmployees\CTraderEmployeesTests\bin\Debug\TestResults\graeme_UNIVERSE 2011-09-17 17_30_56\Out\test.data' because it is being used by another process..</Message>
+          <StackTrace>    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding)
+   at System.IO.File.InternalAppendAllText(String path, String contents, Encoding encoding)
+   at System.IO.File.AppendAllText(String path, String contents)
+   at CTraderEmployees.Models.DataStore.SaveRecord(EmployeeModel employee) in C:\Users\graeme\documents\visual studio 2010\Projects\CTraderEmployees\CTraderEmployees\Models\DataStore.cs:line 42
+   at CTraderEmployeesTests.EmployeeTests.SaveEmployee() in C:\Users\graeme\documents\visual studio 2010\Projects\CTraderEmployees\CTraderEmployeesTests\EmployeeTests.cs:line 95
+
+TestCleanup Stack Trace
+    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.Delete(String path)
+   at CTraderEmployees.Models.DataStore.RemoveDataStore() in C:\Users\graeme\documents\visual studio 2010\Projects\CTraderEmployees\CTraderEmployees\Models\DataStore.cs:line 35
+   at CTraderEmployeesTests.EmployeeTests.RemoveDatastore() in C:\Users\graeme\documents\visual studio 2010\Projects\CTraderEmployees\CTraderEmployeesTests\EmployeeTests.cs:line 103
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

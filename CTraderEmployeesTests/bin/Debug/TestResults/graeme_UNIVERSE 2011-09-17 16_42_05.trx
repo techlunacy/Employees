@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="3347b18f-f4d7-4f01-8f79-09d279ec6d8f" name="graeme@UNIVERSE 2011-09-17 16:42:05" runUser="Universe\graeme" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="e920189b-fed0-46c2-83c6-cc62807d3a99">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="graeme_UNIVERSE 2011-09-17 16_42_05" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-09-17T16:42:05.2297332+10:00" queuing="2011-09-17T16:42:05.5227500+10:00" start="2011-09-17T16:42:05.8057662+10:00" finish="2011-09-17T16:42:06.1097836+10:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="4" executed="4" passed="2" error="0" failed="2" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="ConfigExists" storage="c:\users\graeme\documents\visual studio 2010\projects\ctraderemployees\ctraderemployeestests\bin\debug\ctraderemployeestests.dll" id="5dafe0aa-4690-22d9-56bc-90a1639b3f6b">
+      <Execution timeOut="1800000" id="9b1fe7ef-0db1-4ca8-8249-0ef3719ee766" />
+      <TestMethod codeBase="C:/Users/graeme/documents/visual studio 2010/Projects/CTraderEmployees/CTraderEmployeesTests/bin/Debug/CTraderEmployeesTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CTraderEmployeesTests.ConfigTests, CTraderEmployeesTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ConfigExists" />
+    </UnitTest>
+    <UnitTest name="InvalidPath" storage="c:\users\graeme\documents\visual studio 2010\projects\ctraderemployees\ctraderemployeestests\bin\debug\ctraderemployeestests.dll" id="b8e3a127-60fb-d15a-38dd-91050e14e18a">
+      <Execution timeOut="1800000" id="f90a8407-9a4e-4148-b02d-704b1e2895c3" />
+      <TestMethod codeBase="C:/Users/graeme/documents/visual studio 2010/Projects/CTraderEmployees/CTraderEmployeesTests/bin/Debug/CTraderEmployeesTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CTraderEmployeesTests.ConfigTests, CTraderEmployeesTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="InvalidPath" />
+    </UnitTest>
+    <UnitTest name="CreateFile" storage="c:\users\graeme\documents\visual studio 2010\projects\ctraderemployees\ctraderemployeestests\bin\debug\ctraderemployeestests.dll" id="238caa62-8e4b-18f5-e130-74cbaddee443">
+      <Execution timeOut="1800000" id="3016d73a-f625-44ef-b882-1488ae5fb73f" />
+      <TestMethod codeBase="C:/Users/graeme/documents/visual studio 2010/Projects/CTraderEmployees/CTraderEmployeesTests/bin/Debug/CTraderEmployeesTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CTraderEmployeesTests.ConfigTests, CTraderEmployeesTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreateFile" />
+    </UnitTest>
+    <UnitTest name="ConfigHasPath" storage="c:\users\graeme\documents\visual studio 2010\projects\ctraderemployees\ctraderemployeestests\bin\debug\ctraderemployeestests.dll" id="750b2ed7-8531-78d8-975c-8b53fd505641">
+      <Execution timeOut="1800000" id="5ab8640f-75f2-493d-ba0c-939eccaab098" />
+      <TestMethod codeBase="C:/Users/graeme/documents/visual studio 2010/Projects/CTraderEmployees/CTraderEmployeesTests/bin/Debug/CTraderEmployeesTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CTraderEmployeesTests.ConfigTests, CTraderEmployeesTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ConfigHasPath" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="5dafe0aa-4690-22d9-56bc-90a1639b3f6b" executionId="9b1fe7ef-0db1-4ca8-8249-0ef3719ee766" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="750b2ed7-8531-78d8-975c-8b53fd505641" executionId="5ab8640f-75f2-493d-ba0c-939eccaab098" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="238caa62-8e4b-18f5-e130-74cbaddee443" executionId="3016d73a-f625-44ef-b882-1488ae5fb73f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b8e3a127-60fb-d15a-38dd-91050e14e18a" executionId="f90a8407-9a4e-4148-b02d-704b1e2895c3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="9b1fe7ef-0db1-4ca8-8249-0ef3719ee766" testId="5dafe0aa-4690-22d9-56bc-90a1639b3f6b" testName="ConfigExists" computerName="UNIVERSE" duration="00:00:00.0393241" startTime="2011-09-17T16:42:05.8627695+10:00" endTime="2011-09-17T16:42:05.9657753+10:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9b1fe7ef-0db1-4ca8-8249-0ef3719ee766">
+    </UnitTestResult>
+    <UnitTestResult executionId="5ab8640f-75f2-493d-ba0c-939eccaab098" testId="750b2ed7-8531-78d8-975c-8b53fd505641" testName="ConfigHasPath" computerName="UNIVERSE" duration="00:00:00.0057950" startTime="2011-09-17T16:42:05.9717757+10:00" endTime="2011-09-17T16:42:05.9787761+10:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5ab8640f-75f2-493d-ba0c-939eccaab098">
+    </UnitTestResult>
+    <UnitTestResult executionId="3016d73a-f625-44ef-b882-1488ae5fb73f" testId="238caa62-8e4b-18f5-e130-74cbaddee443" testName="CreateFile" computerName="UNIVERSE" duration="00:00:00.0354728" startTime="2011-09-17T16:42:05.9817763+10:00" endTime="2011-09-17T16:42:06.0267788+10:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3016d73a-f625-44ef-b882-1488ae5fb73f">
+      <Output>
+        <ErrorInfo>
+          <Message>TestCleanup method CTraderEmployeesTests.ConfigTests.RemoveFile threw exception. System.IO.IOException: System.IO.IOException: The process cannot access the file 'C:\Users\graeme\documents\visual studio 2010\Projects\CTraderEmployees\CTraderEmployeesTests\bin\Debug\TestResults\graeme_UNIVERSE 2011-09-17 16_42_05\Outnew_test.data' because it is being used by another process..</Message>
+          <StackTrace>    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.Delete(String path)
+   at CTraderEmployeesTests.ConfigTests.RemoveFile() in C:\Users\graeme\documents\visual studio 2010\Projects\CTraderEmployees\CTraderEmployeesTests\ConfigTests.cs:line 54
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f90a8407-9a4e-4148-b02d-704b1e2895c3" testId="b8e3a127-60fb-d15a-38dd-91050e14e18a" testName="InvalidPath" computerName="UNIVERSE" duration="00:00:00.0064381" startTime="2011-09-17T16:42:06.0307791+10:00" endTime="2011-09-17T16:42:06.0387795+10:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f90a8407-9a4e-4148-b02d-704b1e2895c3">
+      <Output>
+        <ErrorInfo>
+          <Message>TestCleanup method CTraderEmployeesTests.ConfigTests.RemoveFile threw exception. System.IO.IOException: System.IO.IOException: The process cannot access the file 'C:\Users\graeme\documents\visual studio 2010\Projects\CTraderEmployees\CTraderEmployeesTests\bin\Debug\TestResults\graeme_UNIVERSE 2011-09-17 16_42_05\Outnew_test.data' because it is being used by another process..</Message>
+          <StackTrace>    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.Delete(String path)
+   at CTraderEmployeesTests.ConfigTests.RemoveFile() in C:\Users\graeme\documents\visual studio 2010\Projects\CTraderEmployees\CTraderEmployeesTests\ConfigTests.cs:line 54
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

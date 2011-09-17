@@ -1,0 +1,5 @@
+C:\Users\graeme\documents\visual studio 2010\Projects\CTraderEmployees\CTraderEmployees\bin\CTraderEmployees.dll
+C:\Users\graeme\documents\visual studio 2010\Projects\CTraderEmployees\CTraderEmployees\bin\CTraderEmployees.pdb
+C:\Users\graeme\documents\visual studio 2010\Projects\CTraderEmployees\CTraderEmployees\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\graeme\documents\visual studio 2010\Projects\CTraderEmployees\CTraderEmployees\obj\Debug\CTraderEmployees.dll
+C:\Users\graeme\documents\visual studio 2010\Projects\CTraderEmployees\CTraderEmployees\obj\Debug\CTraderEmployees.pdb
