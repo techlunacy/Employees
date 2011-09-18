@@ -1,5 +1,7 @@
 /* Styles for validation helpers
 -----------------------------------------------------------*/
+body{font-family: Verdana, sans-serif;}
+
 .field-validation-error
 {
     color: #ff0000;
