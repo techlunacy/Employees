@@ -62,14 +62,21 @@ namespace CTraderEmployeesTests
         #endregion
 
         private EmployeeModel _currentEmployeeModel;
+        private EmployeeModel _secondEmployeeModel;
         private Guid _identifier;
         private DataStore _dataStore;
-        protected const string ExpectedFormattedRecordSet = "21d9fb81-bdf8-4c4e-b397-01018f30e90b|john|smith|Male|5|True";
+        private const string InvalidRecord = "21d9fb81-bdf8-4c4e-b397-01018f30e90b|john|smith|Male|True";
+        protected const string ExpectedFormattedRecordSetFirstRow = "21d9fb81-bdf8-4c4e-b397-01018f30e90b|john|smith|Male|5|True";
+        protected const string ExpectedFormattedRecordSetSecondRow = "31d9fb81-bdf8-4c4e-b397-01018f30e90b|pete|John|Male|1|False";
+        private const string Delimiter = "|";
+
         [TestInitialize]
         public void CreateEmployee()
         {
             _identifier = Guid.Parse("21d9fb81-bdf8-4c4e-b397-01018f30e90b");
             _currentEmployeeModel = new EmployeeModel { Id = _identifier, Age = 5, FirstName = "john", LastName = "smith", IsCurrentEmployee = true };
+            var secondEmployeeId = Guid.Parse("31d9fb81-bdf8-4c4e-b397-01018f30e90b");
+            _secondEmployeeModel = new EmployeeModel { Id = secondEmployeeId, Age = 1, FirstName = "pete", LastName = "John", Gender = EmployeeGender.Male, IsCurrentEmployee = false };
             _dataStore = new DataStore();
             _dataStore.CreateDataStore("test.data");
 
@@ -95,7 +102,7 @@ namespace CTraderEmployeesTests
         {
             _dataStore.SaveRecord(_currentEmployeeModel);
             var records = File.ReadLines(_dataStore.Path);
-            Assert.AreEqual(ExpectedFormattedRecordSet, records.ElementAt(0));
+            Assert.AreEqual(ExpectedFormattedRecordSetFirstRow, records.First());
         }
 
         [TestMethod]
@@ -119,9 +126,68 @@ namespace CTraderEmployeesTests
             _dataStore.SaveRecord(_currentEmployeeModel);
             _currentEmployeeModel.FirstName = "James";
             _dataStore.SaveRecord(_currentEmployeeModel);
-            IEnumerable<string> records = File.ReadLines(_dataStore.Path);
-            Assert.AreNotEqual(ExpectedFormattedRecordSet, records.ElementAt(0));
+            var records = _dataStore.ReadRecords();
+            Assert.AreNotEqual(ExpectedFormattedRecordSetFirstRow, records.ElementAt(0));
         }
+        [TestMethod]
+        public void HaveMultipleRecords()
+        {
+            _dataStore.SaveRecord(_currentEmployeeModel);
+            _dataStore.SaveRecord(_secondEmployeeModel);
+            Assert.IsTrue(_dataStore.IdExists(_currentEmployeeModel.Id));
+            Assert.IsTrue(_dataStore.IdExists(_secondEmployeeModel.Id));
+        }
+        [TestMethod]
+        public void ReturnEmployee()
+        {
+            _dataStore.SaveRecord(_currentEmployeeModel);
+            EmployeeModel employeeModel = _dataStore.GetRecordById(_currentEmployeeModel.Id);
+            Assert.AreEqual(employeeModel.Id, _currentEmployeeModel.Id);
+            Assert.AreEqual(employeeModel.FirstName, _currentEmployeeModel.FirstName);
+            Assert.AreEqual(employeeModel.LastName, _currentEmployeeModel.LastName);
+            Assert.AreEqual(employeeModel.Age, _currentEmployeeModel.Age);
+            Assert.AreEqual(employeeModel.IsCurrentEmployee, _currentEmployeeModel.IsCurrentEmployee);
+            Assert.AreEqual(employeeModel.Gender, _currentEmployeeModel.Gender);
+        }
+        [TestMethod]
+        public void ParseEmployee()
+        {
+            EmployeeModel employeeModel = EmployeeModel.Parse(Delimiter, _currentEmployeeModel.FormatRecord(Delimiter));
+            Assert.AreEqual(employeeModel.Id, _currentEmployeeModel.Id);
+            Assert.AreEqual(employeeModel.FirstName, _currentEmployeeModel.FirstName);
+            Assert.AreEqual(employeeModel.LastName, _currentEmployeeModel.LastName);
+            Assert.AreEqual(employeeModel.Age, _currentEmployeeModel.Age);
+            Assert.AreEqual(employeeModel.IsCurrentEmployee, _currentEmployeeModel.IsCurrentEmployee);
+            Assert.AreEqual(employeeModel.Gender, _currentEmployeeModel.Gender);
+        }
+        [TestMethod]
+        public void GetAllEmployees()
+        {
+            _dataStore.SaveRecord(_currentEmployeeModel);
+            _dataStore.SaveRecord(_secondEmployeeModel);
+            var employeeModels = _dataStore.GetAllRecords();
+            Assert.AreEqual(2, employeeModels.Count);
+        }
+        [TestMethod]
+        public void ValidateModel()
+        {
+
+        }
+
+        [TestMethod]
+        public void EmployeeHasId()
+        {
+            var employee = new EmployeeModel();
+            Assert.IsNotNull(employee.Id);
+
+        }
+        [TestMethod]
+        [ExpectedException(typeof(InvalidDataException))]
+        public void ErrorParsing()
+        {
+            EmployeeModel.Parse(Delimiter, InvalidRecord);
+        }
+
         [TestCleanup]
         public void RemoveDatastore()
         {

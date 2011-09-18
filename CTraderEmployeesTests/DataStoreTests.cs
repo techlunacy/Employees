@@ -32,7 +32,7 @@ namespace CTraderEmployeesTests
         [TestMethod]
         public void ConfigHasPath()
         {
-            Assert.AreEqual(ExistingFile, _validDataStore.Path);
+            Assert.AreEqual(new FileInfo(ExistingFile).FullName, _validDataStore.Path);
         }
         [TestMethod]
         [ExpectedException(typeof(FileNotFoundException))]
