@@ -9,8 +9,8 @@
     <link href="/Content/Site.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <div>
-        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+    <div class="MainContent">
+        <asp:ContentPlaceHolder ID="MainContent" runat="server" >
         
         </asp:ContentPlaceHolder>
     </div>

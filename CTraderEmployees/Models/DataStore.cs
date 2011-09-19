@@ -9,6 +9,7 @@ namespace CTraderEmployees.Models
     {
         private string _path;
         private const string Delimiter = "|";
+        private const string ReplacementString = "~~~";
         public string Path
         {
             get { return _path; }
@@ -89,6 +90,17 @@ namespace CTraderEmployees.Models
             var lines = ReadRecords();
             var employeeModels = lines.Select(line => EmployeeModel.Parse(Delimiter, line)).ToList();
             return employeeModels;
+        }
+
+        public static string EncryptData(string delimiter, string value)
+        {
+            if (value == null) throw new ArgumentNullException("value");
+            return value.Replace(delimiter, ReplacementString);
+        }
+        public static string DecryptData(string delimiter, string value)
+        {
+            if (value == null) throw new ArgumentNullException("value");
+            return value.Replace(ReplacementString, delimiter);
         }
     }
 }

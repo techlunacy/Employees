@@ -7,7 +7,6 @@
     <h2>
         Details</h2>
     <fieldset>
-        <legend>Fields</legend>
         <div class="display-label">
             First Name</div>
         <div class="display-field">

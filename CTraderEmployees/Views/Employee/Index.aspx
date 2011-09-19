@@ -17,10 +17,11 @@
     <input type="submit" value="search" />
     <%
         }%>
+    <p>
+        <%: Html.ActionLink("Create New", "Create") %>
+    </p>
     <table>
         <tr>
-            <th>
-            </th>
             <th>
                 First Name
             </th>
@@ -31,23 +32,18 @@
                 Age
             </th>
             <th>
-                Is Current Employee?
+                Is Employee?
             </th>
             <th>
                 Gender
+            </th>
+            <th>
             </th>
         </tr>
         <%
             foreach (var item in Model)
             {%>
         <tr>
-            <td>
-                <%:Html.ActionLink("Edit", "Edit", new {id = item.Id})%>
-                |
-                <%:Html.ActionLink("Details", "Details", new {id = item.Id})%>
-                |
-                <%:Html.ActionLink("Delete", "Delete", new {id = item.Id})%>
-            </td>
             <td>
                 <%:item.FirstName%>
             </td>
@@ -63,11 +59,20 @@
             <td>
                 <%:item.Gender%>
             </td>
+            <td>
+                <%:Html.ActionLink("Edit", "Edit", new {id = item.Id})%>
+                |
+                <%:Html.ActionLink("Details", "Details", new {id = item.Id})%>
+                |
+                <%:Html.ActionLink("Delete", "Delete", new {id = item.Id})%>
+                <%if (item.IsCurrentEmployee)
+                  {	%>
+                |
+                <%:Html.ActionLink("Terminate", "Terminate", new { id = item.Id })%>
+                <%} %>
+            </td>
         </tr>
         <%
             }%>
     </table>
-    <p>
-        <%: Html.ActionLink("Create New", "Create") %>
-    </p>
 </asp:Content>

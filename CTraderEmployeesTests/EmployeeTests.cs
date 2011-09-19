@@ -3,6 +3,8 @@ using System.IO;
 using System.Text;
 using System.Collections.Generic;
 using System.Linq;
+using System.Web.Mvc;
+using CTraderEmployees.Controllers;
 using CTraderEmployees.Models;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -79,8 +81,8 @@ namespace CTraderEmployeesTests
             _secondEmployeeModel = new EmployeeModel { Id = secondEmployeeId, Age = 1, FirstName = "pete", LastName = "John", Gender = EmployeeGender.Male, IsCurrentEmployee = false };
             _dataStore = new DataStore();
             _dataStore.CreateDataStore("test.data");
-
         }
+
         [TestMethod]
         public void EmployeeExists()
         {
@@ -169,9 +171,15 @@ namespace CTraderEmployeesTests
             Assert.AreEqual(2, employeeModels.Count);
         }
         [TestMethod]
-        public void ValidateModel()
+        public void TerminateEmployee()
         {
+            _dataStore.SaveRecord(_currentEmployeeModel);
+            var employeeController = new EmployeeController(_dataStore);
+            var action = employeeController.Terminate(_currentEmployeeModel.Id);
 
+            Assert.IsNotNull(action);
+            var localModel = _dataStore.GetRecordById(_currentEmployeeModel.Id);
+            Assert.IsFalse(localModel.IsCurrentEmployee);
         }
 
         [TestMethod]

@@ -23,11 +23,15 @@ namespace CTraderEmployees.Controllers
 
         //
         // GET: /Employee/Details/5
-        private DataStore _dataStore;
+        internal DataStore _dataStore;
         public EmployeeController()
         {
             _dataStore = new DataStore();
             _dataStore.CreateDataStore(HostingEnvironment.ApplicationPhysicalPath + Properties.Settings.Default["store"].ToString());
+        }
+        public EmployeeController(DataStore dataStore)
+        {
+            _dataStore = dataStore;
         }
 
         public ActionResult Details(Guid id)
@@ -140,6 +144,15 @@ namespace CTraderEmployees.Controllers
             {
                 return View();
             }
+        }
+
+        public ActionResult Terminate(Guid id)
+        {
+            var employeeModel = _dataStore.GetRecordById(id);
+            employeeModel.IsCurrentEmployee = false;
+            _dataStore.SaveRecord(employeeModel);
+
+            return RedirectToAction("Index");
         }
     }
 }

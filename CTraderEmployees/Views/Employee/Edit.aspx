@@ -10,7 +10,6 @@
        {%>
     <%: Html.ValidationSummary(true) %>
     <fieldset>
-        <legend>Fields</legend>
         <div class="editor-label">
             <%: Html.LabelFor(model => model.FirstName) %>
         </div>
@@ -45,8 +44,6 @@
         <div class="editor-field">
             <%: Html.EditorFor(model => model.Gender) %>
             <%: Html.ValidationMessageFor(model => model.Gender) %>
-        </div>
-        <div class="editor-label">
         </div>
         <p>
             <input type="submit" value="Save" />
