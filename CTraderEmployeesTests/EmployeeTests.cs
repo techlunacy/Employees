@@ -187,7 +187,7 @@ namespace CTraderEmployeesTests
         {
             _dataStore.SaveRecord(_currentEmployeeModel);
             var employeeController = new EmployeeController(_dataStore);
-            var action = employeeController.Details(_currentEmployeeModel.Id)as ViewResult;
+            var action = employeeController.Details(_currentEmployeeModel.Id) as ViewResult;
 
             Assert.IsNotNull(action);
             var localModel = (EmployeeModel)action.ViewData.Model;
@@ -198,6 +198,43 @@ namespace CTraderEmployeesTests
             Assert.AreEqual(localModel.IsCurrentEmployee, _currentEmployeeModel.IsCurrentEmployee);
             Assert.AreEqual(localModel.Gender, _currentEmployeeModel.Gender);
         }
+        [TestMethod]
+        public void AllEmployeeList()
+        {
+            _dataStore.SaveRecord(_currentEmployeeModel);
+            _dataStore.SaveRecord(_secondEmployeeModel);
+            var employeeController = new EmployeeController(_dataStore);
+            var action = employeeController.Index(ListSearchFilters.All) as ViewResult;
+
+            Assert.IsNotNull(action);
+            var localModel = (List<EmployeeModel>)action.ViewData.Model;
+            Assert.AreEqual(2, localModel.Count);
+        }
+        [TestMethod]
+        public void NonEmployeeList()
+        {
+            _dataStore.SaveRecord(_currentEmployeeModel);
+            _dataStore.SaveRecord(_secondEmployeeModel);
+            var employeeController = new EmployeeController(_dataStore);
+            var action = employeeController.Index(ListSearchFilters.No) as ViewResult;
+
+            Assert.IsNotNull(action);
+            var localModel = (List<EmployeeModel>)action.ViewData.Model;
+            Assert.AreEqual(1, localModel.Count);
+        }
+        [TestMethod]
+        public void CurrentEmployeeList()
+        {
+            _dataStore.SaveRecord(_currentEmployeeModel);
+            _dataStore.SaveRecord(_secondEmployeeModel);
+            var employeeController = new EmployeeController(_dataStore);
+            var action = employeeController.Index(ListSearchFilters.No) as ViewResult;
+
+            Assert.IsNotNull(action);
+            var localModel = (List<EmployeeModel>)action.ViewData.Model;
+            Assert.AreEqual(1, localModel.Count);
+        }
+
 
 
         [TestMethod]
