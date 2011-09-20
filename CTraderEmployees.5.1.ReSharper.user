@@ -10,51 +10,52 @@
   <RecentFiles>
     <RecentFiles>
       <File id="E6806D70-6552-45E9-A172-18235B6F7218/d:Models/f:EmployeeGender.cs" caret="97" fromTop="2" />
-      <File id="283FA664-600E-4DE3-8FF6-55EAF93C9617/f:DataStoreTests.cs" caret="979" fromTop="29" />
-      <File id="E6806D70-6552-45E9-A172-18235B6F7218/d:Views/d:Employee/f:Create.aspx" caret="0" fromTop="0" />
       <File id="E6806D70-6552-45E9-A172-18235B6F7218/f:Settings.cs" caret="836" fromTop="16" />
-      <File id="E6806D70-6552-45E9-A172-18235B6F7218/d:Views/d:Shared/f:Employee.Master" caret="579" fromTop="11" />
       <File id="E6806D70-6552-45E9-A172-18235B6F7218/d:Views/d:Employee/f:Index.aspx" caret="1817" fromTop="57" />
       <File id="E6806D70-6552-45E9-A172-18235B6F7218/d:Views/d:Employee/f:Details.aspx" caret="378" fromTop="7" />
       <File id="E6806D70-6552-45E9-A172-18235B6F7218/d:Views/d:Employee/f:Edit.aspx" caret="1670" fromTop="39" />
       <File id="E6806D70-6552-45E9-A172-18235B6F7218/d:Content/f:Site.css" caret="258" fromTop="15" />
       <File id="E6806D70-6552-45E9-A172-18235B6F7218/d:Views/d:Shared/d:EditorTemplates/f:enum.ascx" caret="533" fromTop="12" />
-      <File id="E6806D70-6552-45E9-A172-18235B6F7218/d:Models/f:EmployeeModel.cs" caret="1070" fromTop="26" />
-      <File id="E6806D70-6552-45E9-A172-18235B6F7218/d:Models/f:DataStore.cs" caret="2317" fromTop="28" />
-      <File id="E6806D70-6552-45E9-A172-18235B6F7218/d:Controllers/f:EmployeeController.cs" caret="1049" fromTop="33" />
-      <File id="283FA664-600E-4DE3-8FF6-55EAF93C9617/f:EmployeeTests.cs" caret="7710" fromTop="30" />
+      <File id="E6806D70-6552-45E9-A172-18235B6F7218/d:Models/f:DataStore.cs" caret="0" fromTop="0" />
+      <File id="283FA664-600E-4DE3-8FF6-55EAF93C9617/f:DataStoreTests.cs" caret="1690" fromTop="47" />
+      <File id="E6806D70-6552-45E9-A172-18235B6F7218/d:Models/f:EmployeeModel.cs" caret="772" fromTop="0" />
+      <File id="E6806D70-6552-45E9-A172-18235B6F7218/d:Views/d:Shared/f:Employee.Master" caret="943" fromTop="17" />
+      <File id="E6806D70-6552-45E9-A172-18235B6F7218/d:Views/d:Employee/f:Create.aspx" caret="499" fromTop="12" />
+      <File id="E6806D70-6552-45E9-A172-18235B6F7218/d:Controllers/f:EmployeeController.cs" caret="2299" fromTop="39" />
+      <File id="283FA664-600E-4DE3-8FF6-55EAF93C9617/f:EmployeeTests.cs" caret="8711" fromTop="36" />
+      <File id="E6806D70-6552-45E9-A172-18235B6F7218/f:README" caret="157" fromTop="2" />
     </RecentFiles>
     <RecentEdits>
-      <File id="E6806D70-6552-45E9-A172-18235B6F7218/d:Views/d:Employee/f:Edit.aspx" caret="1960" fromTop="37" />
-      <File id="E6806D70-6552-45E9-A172-18235B6F7218/d:Content/f:Site.css" caret="934" fromTop="16" />
-      <File id="E6806D70-6552-45E9-A172-18235B6F7218/d:Content/f:Site.css" caret="934" fromTop="41" />
-      <File id="E6806D70-6552-45E9-A172-18235B6F7218/d:Content/f:Site.css" caret="934" fromTop="36" />
-      <File id="E6806D70-6552-45E9-A172-18235B6F7218/d:Content/f:Site.css" caret="934" fromTop="41" />
-      <File id="E6806D70-6552-45E9-A172-18235B6F7218/d:Content/f:Site.css" caret="0" fromTop="0" />
-      <File id="E6806D70-6552-45E9-A172-18235B6F7218/d:Views/d:Employee/f:Details.aspx" caret="396" fromTop="9" />
-      <File id="E6806D70-6552-45E9-A172-18235B6F7218/d:Views/d:Employee/f:Edit.aspx" caret="476" fromTop="12" />
-      <File id="E6806D70-6552-45E9-A172-18235B6F7218/d:Content/f:Site.css" caret="359" fromTop="22" />
-      <File id="E6806D70-6552-45E9-A172-18235B6F7218/d:Content/f:Site.css" caret="245" fromTop="13" />
-      <File id="E6806D70-6552-45E9-A172-18235B6F7218/d:Models/f:EmployeeModel.cs" caret="423" fromTop="16" />
-      <File id="E6806D70-6552-45E9-A172-18235B6F7218/d:Models/f:EmployeeModel.cs" caret="1315" fromTop="32" />
-      <File id="E6806D70-6552-45E9-A172-18235B6F7218/d:Models/f:EmployeeModel.cs" caret="1315" fromTop="30" />
-      <File id="E6806D70-6552-45E9-A172-18235B6F7218/d:Models/f:EmployeeModel.cs" caret="1315" fromTop="38" />
-      <File id="E6806D70-6552-45E9-A172-18235B6F7218/d:Models/f:DataStore.cs" caret="3057" fromTop="40" />
-      <File id="E6806D70-6552-45E9-A172-18235B6F7218/d:Models/f:DataStore.cs" caret="2603" fromTop="31" />
-      <File id="E6806D70-6552-45E9-A172-18235B6F7218/d:Models/f:DataStore.cs" caret="2838" fromTop="36" />
-      <File id="E6806D70-6552-45E9-A172-18235B6F7218/d:Models/f:DataStore.cs" caret="296" fromTop="11" />
-      <File id="E6806D70-6552-45E9-A172-18235B6F7218/d:Models/f:EmployeeModel.cs" caret="1176" fromTop="37" />
-      <File id="E6806D70-6552-45E9-A172-18235B6F7218/d:Models/f:EmployeeModel.cs" caret="2011" fromTop="41" />
-      <File id="E6806D70-6552-45E9-A172-18235B6F7218/d:Models/f:EmployeeModel.cs" caret="1574" fromTop="35" />
-      <File id="E6806D70-6552-45E9-A172-18235B6F7218/d:Models/f:EmployeeModel.cs" caret="1322" fromTop="18" />
-      <File id="E6806D70-6552-45E9-A172-18235B6F7218/d:Models/f:EmployeeModel.cs" caret="179" fromTop="7" />
-      <File id="283FA664-600E-4DE3-8FF6-55EAF93C9617/f:EmployeeTests.cs" caret="7695" fromTop="35" />
-      <File id="283FA664-600E-4DE3-8FF6-55EAF93C9617/f:EmployeeTests.cs" caret="7287" fromTop="27" />
-      <File id="E6806D70-6552-45E9-A172-18235B6F7218/d:Controllers/f:EmployeeController.cs" caret="687" fromTop="25" />
-      <File id="283FA664-600E-4DE3-8FF6-55EAF93C9617/f:EmployeeTests.cs" caret="3205" fromTop="49" />
       <File id="E6806D70-6552-45E9-A172-18235B6F7218/d:Controllers/f:EmployeeController.cs" caret="1000" fromTop="31" />
       <File id="E6806D70-6552-45E9-A172-18235B6F7218/d:Controllers/f:EmployeeController.cs" caret="1051" fromTop="34" />
-      <File id="283FA664-600E-4DE3-8FF6-55EAF93C9617/f:EmployeeTests.cs" caret="7432" fromTop="23" />
+      <File id="283FA664-600E-4DE3-8FF6-55EAF93C9617/f:EmployeeTests.cs" caret="12554" fromTop="46" />
+      <File id="283FA664-600E-4DE3-8FF6-55EAF93C9617/f:EmployeeTests.cs" caret="12554" fromTop="50" />
+      <File id="283FA664-600E-4DE3-8FF6-55EAF93C9617/f:EmployeeTests.cs" caret="12554" fromTop="47" />
+      <File id="283FA664-600E-4DE3-8FF6-55EAF93C9617/f:EmployeeTests.cs" caret="12554" fromTop="38" />
+      <File id="E6806D70-6552-45E9-A172-18235B6F7218/d:Models/f:EmployeeModel.cs" caret="2493" fromTop="10" />
+      <File id="E6806D70-6552-45E9-A172-18235B6F7218/d:Models/f:EmployeeModel.cs" caret="216" fromTop="10" />
+      <File id="283FA664-600E-4DE3-8FF6-55EAF93C9617/f:EmployeeTests.cs" caret="12554" fromTop="44" />
+      <File id="283FA664-600E-4DE3-8FF6-55EAF93C9617/f:EmployeeTests.cs" caret="12554" fromTop="30" />
+      <File id="283FA664-600E-4DE3-8FF6-55EAF93C9617/f:EmployeeTests.cs" caret="12554" fromTop="38" />
+      <File id="283FA664-600E-4DE3-8FF6-55EAF93C9617/f:EmployeeTests.cs" caret="10779" fromTop="36" />
+      <File id="283FA664-600E-4DE3-8FF6-55EAF93C9617/f:EmployeeTests.cs" caret="10490" fromTop="31" />
+      <File id="283FA664-600E-4DE3-8FF6-55EAF93C9617/f:EmployeeTests.cs" caret="11019" fromTop="43" />
+      <File id="283FA664-600E-4DE3-8FF6-55EAF93C9617/f:EmployeeTests.cs" caret="11307" fromTop="48" />
+      <File id="283FA664-600E-4DE3-8FF6-55EAF93C9617/f:EmployeeTests.cs" caret="12032" fromTop="46" />
+      <File id="283FA664-600E-4DE3-8FF6-55EAF93C9617/f:EmployeeTests.cs" caret="11551" fromTop="36" />
+      <File id="283FA664-600E-4DE3-8FF6-55EAF93C9617/f:EmployeeTests.cs" caret="1564" fromTop="38" />
+      <File id="283FA664-600E-4DE3-8FF6-55EAF93C9617/f:EmployeeTests.cs" caret="8418" fromTop="19" />
+      <File id="283FA664-600E-4DE3-8FF6-55EAF93C9617/f:EmployeeTests.cs" caret="8418" fromTop="51" />
+      <File id="283FA664-600E-4DE3-8FF6-55EAF93C9617/f:EmployeeTests.cs" caret="9526" fromTop="58" />
+      <File id="283FA664-600E-4DE3-8FF6-55EAF93C9617/f:EmployeeTests.cs" caret="7653" fromTop="21" />
+      <File id="283FA664-600E-4DE3-8FF6-55EAF93C9617/f:EmployeeTests.cs" caret="8418" fromTop="32" />
+      <File id="E6806D70-6552-45E9-A172-18235B6F7218/d:Views/d:Shared/f:Employee.Master" caret="1074" fromTop="13" />
+      <File id="E6806D70-6552-45E9-A172-18235B6F7218/d:Views/d:Shared/f:Employee.Master" caret="893" fromTop="13" />
+      <File id="E6806D70-6552-45E9-A172-18235B6F7218/d:Views/d:Shared/f:Employee.Master" caret="943" fromTop="17" />
+      <File id="E6806D70-6552-45E9-A172-18235B6F7218/d:Views/d:Employee/f:Create.aspx" caret="413" fromTop="10" />
+      <File id="E6806D70-6552-45E9-A172-18235B6F7218/d:Views/d:Employee/f:Create.aspx" caret="242" fromTop="3" />
+      <File id="283FA664-600E-4DE3-8FF6-55EAF93C9617/f:EmployeeTests.cs" caret="8711" fromTop="36" />
+      <File id="E6806D70-6552-45E9-A172-18235B6F7218/f:README" caret="157" fromTop="2" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -70,19 +71,19 @@
   </UnitTestRunnerNUnit>
   <CompletionStatisticsManager>
     <ItemStatistics item="Default">
-      <Item value="Assert`0" priority="11" />
-      <Item value="new" priority="9" />
+      <Item value="Assert`0" priority="13" />
+      <Item value="new" priority="10" />
       <Item value="TestMethod" priority="6" />
       <Item value="public" priority="12" />
       <Item value="virtual" priority="0" />
       <Item value="void" priority="8" />
-      <Item value="EmployeeModel`0" priority="2" />
+      <Item value="EmployeeModel`0" priority="4" />
       <Item value="employeeModel" priority="7" />
-      <Item value="EmployeeModel" priority="0" />
-      <Item value="var" priority="4" />
+      <Item value="EmployeeModel" priority="1" />
+      <Item value="var" priority="6" />
       <Item value="TestInitialize" priority="0" />
       <Item value="IsCurrentEmployee" priority="0" />
-      <Item value="_currentEmployeeModel" priority="7" />
+      <Item value="_currentEmployeeModel" priority="9" />
       <Item value="enum" priority="0" />
       <Item value="Config" priority="2" />
       <Item value="_config" priority="2" />
@@ -120,7 +121,7 @@
       <Item value="dataStore" priority="0" />
       <Item value="_dataStore" priority="7" />
       <Item value="FileStyleUriParser`0" priority="0" />
-      <Item value="List" priority="0" />
+      <Item value="List" priority="1" />
       <Item value="employee" priority="3" />
       <Item value="Environment`0" priority="1" />
       <Item value="fileStream" priority="0" />
@@ -137,7 +138,7 @@
       <Item value="true" priority="0" />
       <Item value="else" priority="0" />
       <Item value="guid" priority="0" />
-      <Item value="null" priority="0" />
+      <Item value="null" priority="1" />
       <Item value="for" priority="0" />
       <Item value="int" priority="1" />
       <Item value="i" priority="2" />
@@ -155,23 +156,34 @@
       <Item value="interface" priority="0" />
       <Item value="employeeController" priority="3" />
       <Item value="filterList" priority="0" />
-      <Item value="action" priority="0" />
-      <Item value="_secondEmployeeModel" priority="0" />
-      <Item value="localModel" priority="0" />
+      <Item value="action" priority="2" />
+      <Item value="_secondEmployeeModel" priority="1" />
+      <Item value="localModel" priority="3" />
+      <Item value="testContextInstance" priority="0" />
+      <Item value="ListSearchFilters`0" priority="0" />
+      <Item value="ActionResult`0" priority="0" />
+      <Item value="as" priority="0" />
+      <Item value="route" priority="0" />
+      <Item value="Html" priority="0" />
+      <Item value="ModelValidator`0" priority="0" />
+      <Item value="ModelMetadata`0" priority="0" />
+      <Item value="validator" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@Microsoft.VisualStudio.TestTools.UnitTesting.Assert">
       <Item value="IsNotNull`0" priority="0" />
-      <Item value="AreEqual`0" priority="5" />
-      <Item value="IsTrue`0" priority="4" />
+      <Item value="AreEqual`0" priority="6" />
+      <Item value="IsTrue`0" priority="5" />
       <Item value="IsFalse`0" priority="1" />
+      <Item value="AreSame`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:CTraderEmployees.Models.EmployeeModel">
-      <Item value="Age" priority="1" />
+      <Item value="Age" priority="2" />
       <Item value="FirstName" priority="2" />
       <Item value="LastName" priority="1" />
       <Item value="Id" priority="6" />
       <Item value="Gender" priority="0" />
       <Item value="IsCurrentEmployee" priority="2" />
+      <Item value="Equals`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:CTraderEmployees.Models.Config">
       <Item value="Path" priority="2" />
@@ -196,7 +208,7 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Guid">
       <Item value="NewGuid`0" priority="0" />
-      <Item value="Parse`0" priority="0" />
+      <Item value="Parse`0" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.IO.FileStream">
       <Item value="Close`0" priority="1" />
@@ -205,7 +217,7 @@
       <Item value="Path" priority="6" />
       <Item value="_path" priority="0" />
       <Item value="RemoveDataStore`0" priority="0" />
-      <Item value="GetRecordById`0" priority="1" />
+      <Item value="GetRecordById`0" priority="2" />
       <Item value="SaveRecord`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Collections.Generic.IEnumerable`1">
@@ -230,9 +242,42 @@
       <Item value="FullName" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:CTraderEmployees.Controllers.EmployeeController">
-      <Item value="Index`0" priority="0" />
+      <Item value="Index`0" priority="1" />
       <Item value="Terminate`0" priority="0" />
       <Item value="_dataStore" priority="0" />
+      <Item value="Details`0" priority="0" />
+      <Item value="Create`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Mvc.ActionResult">
+      <Item value="ExecuteResult`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Mvc.ViewResult">
+      <Item value="ViewData" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Mvc.ViewDataDictionary">
+      <Item value="Model" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="Count" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@CTraderEmployees.Models.ListSearchFilters">
+      <Item value="All" priority="0" />
+      <Item value="No" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Mvc.RedirectToRouteResult">
+      <Item value="RouteValues" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Object">
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Mvc.HtmlHelper`1">
+      <Item value="EnableClientValidation`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Web.Mvc.ModelValidator">
+      <Item value="GetModelValidator`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Mvc.ModelValidator">
+      <Item value="Validate`0" priority="0" />
     </ItemStatistics>
   </CompletionStatisticsManager>
   <UnitTestRunnerMSTest>
