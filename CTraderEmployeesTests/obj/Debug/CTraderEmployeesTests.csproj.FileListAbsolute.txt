@@ -12,3 +12,4 @@ C:\code\employees\CTraderEmployeesTests\bin\Debug\CTraderEmployees.pdb
 C:\code\employees\CTraderEmployeesTests\obj\Debug\ResolveAssemblyReference.cache
 C:\code\employees\CTraderEmployeesTests\obj\Debug\CTraderEmployeesTests.dll
 C:\code\employees\CTraderEmployeesTests\obj\Debug\CTraderEmployeesTests.pdb
+C:\Users\graeme\Documents\Visual Studio 2010\Projects\CTraderEmployees\CTraderEmployeesTests\bin\Debug\CTraderEmployeesTests.dll.config

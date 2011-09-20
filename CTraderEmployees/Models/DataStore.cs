@@ -79,9 +79,16 @@ namespace CTraderEmployees.Models
 
         public EmployeeModel GetRecordById(Guid id)
         {
-            var lines = ReadRecords();
-            var record = lines.First(line => line.StartsWith(id.ToString()));
-            return EmployeeModel.Parse(Delimiter, record);
+            if (IdExists(id))
+            {
+                var lines = ReadRecords();
+                var record = lines.First(line => line.StartsWith(id.ToString()));
+                return EmployeeModel.Parse(Delimiter, record);
+            }
+            else
+            {
+                throw new InvalidDataException("record not found");
+            }
         }
 
 

@@ -13,7 +13,7 @@ namespace CTraderEmployeesTests
     {
         private DataStore _validDataStore;
         internal string DataStorePath = Directory.GetCurrentDirectory();
-        internal string DataStoreFileName = "new_test.data";
+        internal string DataStoreFileName = "employee.data";
 
         internal string ExistingFile = @"test.data";
         [TestInitialize]
@@ -22,6 +22,7 @@ namespace CTraderEmployeesTests
             FileStream stream = File.Create(ExistingFile);
             stream.Close();
             _validDataStore = new DataStore { Path = ExistingFile };
+            Directory.CreateDirectory(("Content"));
         }
 
         [TestMethod]
@@ -56,6 +57,14 @@ namespace CTraderEmployeesTests
             Assert.IsTrue(File.Exists(DataStoreFileName));
             dataStore.RemoveDataStore();
             Assert.IsFalse(File.Exists(DataStoreFileName));
+        }
+        [TestMethod]
+        [ExpectedException(typeof(InvalidDataException))]
+        public void InvalidRecordCalled()
+        {
+            var dataStore = new DataStore();
+            dataStore.CreateDataStore(DataStoreFileName);
+            dataStore.GetRecordById(Guid.NewGuid());
         }
 
         [TestCleanup]

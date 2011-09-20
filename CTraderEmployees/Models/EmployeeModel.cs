@@ -1,7 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.IO;
+using System.Net;
+using System.Web.Hosting;
+using System.Web.Mvc;
+using CTraderEmployees.Properties;
 
 namespace CTraderEmployees.Models
 {
@@ -28,6 +33,7 @@ namespace CTraderEmployees.Models
         [UIHint("Enum")]
         [EnumDataType(typeof(EmployeeGender))]
         public EmployeeGender Gender { get; set; }
+
 
         public EmployeeModel()
         {
@@ -62,6 +68,36 @@ namespace CTraderEmployees.Models
                 throw new InvalidDataException();
             }
             return employeeModel;
+        }
+
+        public static List<EmployeeModel> FindByEmploymentStatusFilter(EmploymentStatusFilter? filterList, string path)
+        {
+            var dataStore = new DataStore { Path = path };
+            var employeeModels = dataStore.GetAllRecords();
+            if (filterList.HasValue && filterList != EmploymentStatusFilter.All)
+            {
+                var removeStatus = (filterList.Value == EmploymentStatusFilter.No);
+                employeeModels.RemoveAll(employee => employee.IsCurrentEmployee == removeStatus);
+            }
+            return employeeModels;
+        }
+
+        public void Save(string path)
+        {
+            var dataStore = new DataStore { Path = path };
+            dataStore.SaveRecord(this);
+        }
+
+        public static EmployeeModel LoadById(Guid id, string path)
+        {
+            var dataStore = new DataStore { Path = path };
+            return dataStore.GetRecordById(id);
+        }
+
+        public static void DeleteById(Guid id, string path)
+        {
+            var dataStore = new DataStore { Path = path };
+            dataStore.RemoveRecordById(id);
         }
     }
 }

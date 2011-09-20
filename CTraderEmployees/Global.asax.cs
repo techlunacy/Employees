@@ -1,5 +1,8 @@
-﻿using System.Web.Mvc;
+﻿using System;
+using System.Web.Hosting;
+using System.Web.Mvc;
 using System.Web.Routing;
+using CTraderEmployees.Models;
 
 namespace CTraderEmployees
 {
@@ -8,6 +11,7 @@ namespace CTraderEmployees
 
     public class MvcApplication : System.Web.HttpApplication
     {
+
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
@@ -25,6 +29,10 @@ namespace CTraderEmployees
             AreaRegistration.RegisterAllAreas();
 
             RegisterRoutes(RouteTable.Routes);
+
+            var dataStore = new DataStore();
+            dataStore.CreateDataStore(HostingEnvironment.ApplicationPhysicalPath + Properties.Settings.Default["store"].ToString());
         }
+
     }
 }

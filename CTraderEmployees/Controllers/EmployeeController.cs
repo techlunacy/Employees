@@ -2,13 +2,16 @@
 using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
+using System.Threading;
 using System.Web;
 using System.Web.Hosting;
 using System.Web.Mvc;
 using CTraderEmployees.Models;
+using CTraderEmployees.Properties;
 
 namespace CTraderEmployees.Controllers
 {
+    [HandleError]
     public class EmployeeController : Controller
     {
         //
@@ -23,20 +26,19 @@ namespace CTraderEmployees.Controllers
 
         //
         // GET: /Employee/Details/5
-        internal DataStore _dataStore;
+        internal string Path = Settings.Default["store"].ToString();
         public EmployeeController()
         {
-            _dataStore = new DataStore();
-            _dataStore.CreateDataStore(HostingEnvironment.ApplicationPhysicalPath + Properties.Settings.Default["store"].ToString());
+
         }
-        public EmployeeController(DataStore dataStore)
+        public EmployeeController(string path)
         {
-            _dataStore = dataStore;
+            Path = path;
         }
 
         public ActionResult Details(Guid id)
         {
-            var employeeRecord = _dataStore.GetRecordById(id);
+            var employeeRecord = EmployeeModel.LoadById(id, Path);
             return View(employeeRecord);
         }
 
@@ -50,14 +52,9 @@ namespace CTraderEmployees.Controllers
         //
         // POST: /Employee/Create
 
-        public ActionResult Index(ListSearchFilters? filterList)
+        public ActionResult Index(EmploymentStatusFilter? filterList)
         {
-            List<EmployeeModel> employeeModels = _dataStore.GetAllRecords();
-            if (filterList.HasValue && filterList != ListSearchFilters.All)
-            {
-                var removeStatus = (filterList.Value == ListSearchFilters.No);
-                employeeModels.RemoveAll(employee => employee.IsCurrentEmployee == removeStatus);
-            }
+            var employeeModels = EmployeeModel.FindByEmploymentStatusFilter(filterList, Path);
             return View(employeeModels);
         }
 
@@ -72,7 +69,7 @@ namespace CTraderEmployees.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    _dataStore.SaveRecord(collection);
+                    collection.Save(Path);
                     return RedirectToAction("Details", new { id = collection.Id });
                 }
                 else
@@ -92,7 +89,7 @@ namespace CTraderEmployees.Controllers
 
         public ActionResult Edit(Guid id)
         {
-            var employeeRecord = _dataStore.GetRecordById(id);
+            var employeeRecord = EmployeeModel.LoadById(id, Path);
 
             return View(employeeRecord);
         }
@@ -108,7 +105,7 @@ namespace CTraderEmployees.Controllers
                 if (ModelState.IsValid)
                 {
                     collection.Id = id;
-                    _dataStore.SaveRecord(collection);
+                    collection.Save(Path);
                     return RedirectToAction("Details", new { id = collection.Id });
                 }
                 return View();
@@ -124,7 +121,7 @@ namespace CTraderEmployees.Controllers
 
         public ActionResult Delete(Guid id)
         {
-            var employeeRecord = _dataStore.GetRecordById(id);
+            var employeeRecord = EmployeeModel.LoadById(id, Path);
 
             return View(employeeRecord);
         }
@@ -137,7 +134,7 @@ namespace CTraderEmployees.Controllers
         {
             try
             {
-                _dataStore.RemoveRecordById(id);
+                EmployeeModel.DeleteById(id, Path);
                 return RedirectToAction("Index");
             }
             catch
@@ -148,9 +145,9 @@ namespace CTraderEmployees.Controllers
 
         public ActionResult Terminate(Guid id)
         {
-            var employeeModel = _dataStore.GetRecordById(id);
+            var employeeModel = EmployeeModel.LoadById(id, Path);
             employeeModel.IsCurrentEmployee = false;
-            _dataStore.SaveRecord(employeeModel);
+            employeeModel.Save(Path);
 
             return RedirectToAction("Index");
         }

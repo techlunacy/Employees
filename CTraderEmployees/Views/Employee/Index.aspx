@@ -9,9 +9,9 @@
         Index</h2>
     <% using (Html.BeginForm())
        {
-           var filter = ListSearchFilters.All;
-           var values = Enum.GetValues(typeof(ListSearchFilters));
-           var items = (from object value in values select new SelectListItem() { Value = value.ToString(), Text = value.ToString(), Selected = (ListSearchFilters)value == filter }).ToList();
+           const EmploymentStatusFilter filter = EmploymentStatusFilter.All;
+           var values = Enum.GetValues(typeof(EmploymentStatusFilter));
+           var items = (from object value in values select new SelectListItem() { Value = value.ToString(), Text = value.ToString(), Selected = (EmploymentStatusFilter)value == filter }).ToList();
     %>
     Filter By Employment Status:<%: Html.DropDownList("filterList", items)%>
     <input type="submit" value="search" />
