@@ -3,3 +3,8 @@ C:\Users\graeme\documents\visual studio 2010\Projects\CTraderEmployees\CTraderEm
 C:\Users\graeme\documents\visual studio 2010\Projects\CTraderEmployees\CTraderEmployees\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\graeme\documents\visual studio 2010\Projects\CTraderEmployees\CTraderEmployees\obj\Debug\CTraderEmployees.dll
 C:\Users\graeme\documents\visual studio 2010\Projects\CTraderEmployees\CTraderEmployees\obj\Debug\CTraderEmployees.pdb
+C:\code\employees\CTraderEmployees\bin\CTraderEmployees.dll
+C:\code\employees\CTraderEmployees\bin\CTraderEmployees.pdb
+C:\code\employees\CTraderEmployees\obj\Debug\ResolveAssemblyReference.cache
+C:\code\employees\CTraderEmployees\obj\Debug\CTraderEmployees.dll
+C:\code\employees\CTraderEmployees\obj\Debug\CTraderEmployees.pdb

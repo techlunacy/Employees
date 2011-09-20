@@ -52,15 +52,6 @@ namespace CTraderEmployeesTests
         // Use ClassCleanup to run code after all tests in a class have run
         // [ClassCleanup()]
         // public static void MyClassCleanup() { }
-        //
-        // Use TestInitialize to run code before running each test 
-        // [TestInitialize()]
-        // public void MyTestInitialize() { }
-        //
-        // Use TestCleanup to run code after each test has run
-        // [TestCleanup()]
-        // public void MyTestCleanup() { }
-        //
         #endregion
 
         private EmployeeModel _currentEmployeeModel;
@@ -181,6 +172,103 @@ namespace CTraderEmployeesTests
             var localModel = _dataStore.GetRecordById(_currentEmployeeModel.Id);
             Assert.IsFalse(localModel.IsCurrentEmployee);
         }
+        [TestMethod]
+        public void EmployeeCreate()
+        {
+            var employeeController = new EmployeeController(_dataStore);
+            var action = employeeController.Create(_currentEmployeeModel);
+
+            Assert.IsNotNull(action);
+            var route = action as RedirectToRouteResult;
+            var localModel = new EmployeeModel();
+            if (route != null)
+            {
+                localModel = _dataStore.GetRecordById(Guid.Parse(route.RouteValues["id"].ToString()));
+            }
+            Assert.AreEqual(localModel.Id, _currentEmployeeModel.Id);
+            Assert.AreEqual(localModel.FirstName, _currentEmployeeModel.FirstName);
+            Assert.AreEqual(localModel.LastName, _currentEmployeeModel.LastName);
+            Assert.AreEqual(localModel.Age, _currentEmployeeModel.Age);
+            Assert.AreEqual(localModel.IsCurrentEmployee, _currentEmployeeModel.IsCurrentEmployee);
+            Assert.AreEqual(localModel.Gender, _currentEmployeeModel.Gender);
+        }
+        [TestMethod]
+        public void EmployeeCreateWithInvalidAge()
+        {
+            _currentEmployeeModel.Age = -1;
+            var employeeController = new EmployeeController(_dataStore);
+            var action = employeeController.Create(_currentEmployeeModel);
+            Assert.IsNotNull(action);
+            var route = action as RedirectToRouteResult;
+            var localModel = new EmployeeModel();
+            if (route != null)
+            {
+                localModel = _dataStore.GetRecordById(Guid.Parse(route.RouteValues["id"].ToString()));
+            }
+            Assert.AreEqual(localModel.Id, _currentEmployeeModel.Id);
+            Assert.AreEqual(localModel.FirstName, _currentEmployeeModel.FirstName);
+            Assert.AreEqual(localModel.LastName, _currentEmployeeModel.LastName);
+            Assert.AreEqual(localModel.Age, _currentEmployeeModel.Age);
+            Assert.AreEqual(localModel.IsCurrentEmployee, _currentEmployeeModel.IsCurrentEmployee);
+            Assert.AreEqual(localModel.Gender, _currentEmployeeModel.Gender);
+        }
+
+
+
+        [TestMethod]
+        public void EmployeeDetails()
+        {
+            _dataStore.SaveRecord(_currentEmployeeModel);
+            var employeeController = new EmployeeController(_dataStore);
+            var action = employeeController.Details(_currentEmployeeModel.Id) as ViewResult;
+
+            Assert.IsNotNull(action);
+            var localModel = (EmployeeModel)action.ViewData.Model;
+            Assert.AreEqual(localModel.Id, _currentEmployeeModel.Id);
+            Assert.AreEqual(localModel.FirstName, _currentEmployeeModel.FirstName);
+            Assert.AreEqual(localModel.LastName, _currentEmployeeModel.LastName);
+            Assert.AreEqual(localModel.Age, _currentEmployeeModel.Age);
+            Assert.AreEqual(localModel.IsCurrentEmployee, _currentEmployeeModel.IsCurrentEmployee);
+            Assert.AreEqual(localModel.Gender, _currentEmployeeModel.Gender);
+        }
+        [TestMethod]
+        public void AllEmployeeList()
+        {
+            _dataStore.SaveRecord(_currentEmployeeModel);
+            _dataStore.SaveRecord(_secondEmployeeModel);
+            var employeeController = new EmployeeController(_dataStore);
+            var action = employeeController.Index(ListSearchFilters.All) as ViewResult;
+
+            Assert.IsNotNull(action);
+            var localModel = (List<EmployeeModel>)action.ViewData.Model;
+            Assert.AreEqual(2, localModel.Count);
+        }
+        [TestMethod]
+        public void NonEmployeeList()
+        {
+            _dataStore.SaveRecord(_currentEmployeeModel);
+            _dataStore.SaveRecord(_secondEmployeeModel);
+            var employeeController = new EmployeeController(_dataStore);
+            var action = employeeController.Index(ListSearchFilters.No) as ViewResult;
+
+            Assert.IsNotNull(action);
+            var localModel = (List<EmployeeModel>)action.ViewData.Model;
+            Assert.AreEqual(1, localModel.Count);
+        }
+        [TestMethod]
+        public void CurrentEmployeeList()
+        {
+            _dataStore.SaveRecord(_currentEmployeeModel);
+            _dataStore.SaveRecord(_secondEmployeeModel);
+            var employeeController = new EmployeeController(_dataStore);
+            var action = employeeController.Index(ListSearchFilters.No) as ViewResult;
+
+            Assert.IsNotNull(action);
+            var localModel = (List<EmployeeModel>)action.ViewData.Model;
+            Assert.AreEqual(1, localModel.Count);
+        }
+
+
 
         [TestMethod]
         public void EmployeeHasId()
