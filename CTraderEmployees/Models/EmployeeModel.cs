@@ -6,8 +6,8 @@ using System.IO;
 namespace CTraderEmployees.Models
 {
     public class EmployeeModel
-
     {
+        [Required]
         public Guid Id;
         internal const int NumberOfFields = 6;
         [Required]

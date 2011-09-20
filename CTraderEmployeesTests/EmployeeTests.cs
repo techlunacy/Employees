@@ -183,6 +183,24 @@ namespace CTraderEmployeesTests
         }
 
         [TestMethod]
+        public void EmployeeDetails()
+        {
+            _dataStore.SaveRecord(_currentEmployeeModel);
+            var employeeController = new EmployeeController(_dataStore);
+            var action = employeeController.Details(_currentEmployeeModel.Id)as ViewResult;
+
+            Assert.IsNotNull(action);
+            var localModel = (EmployeeModel)action.ViewData.Model;
+            Assert.AreEqual(localModel.Id, _currentEmployeeModel.Id);
+            Assert.AreEqual(localModel.FirstName, _currentEmployeeModel.FirstName);
+            Assert.AreEqual(localModel.LastName, _currentEmployeeModel.LastName);
+            Assert.AreEqual(localModel.Age, _currentEmployeeModel.Age);
+            Assert.AreEqual(localModel.IsCurrentEmployee, _currentEmployeeModel.IsCurrentEmployee);
+            Assert.AreEqual(localModel.Gender, _currentEmployeeModel.Gender);
+        }
+
+
+        [TestMethod]
         public void EmployeeHasId()
         {
             var employee = new EmployeeModel();
