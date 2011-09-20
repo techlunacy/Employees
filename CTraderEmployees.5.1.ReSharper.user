@@ -25,7 +25,6 @@
       <File id="283FA664-600E-4DE3-8FF6-55EAF93C9617/f:EmployeeTests.cs" caret="7710" fromTop="30" />
     </RecentFiles>
     <RecentEdits>
-      <File id="E6806D70-6552-45E9-A172-18235B6F7218/d:Views/d:Employee/f:Edit.aspx" caret="1960" fromTop="37" />
       <File id="E6806D70-6552-45E9-A172-18235B6F7218/d:Content/f:Site.css" caret="934" fromTop="16" />
       <File id="E6806D70-6552-45E9-A172-18235B6F7218/d:Content/f:Site.css" caret="934" fromTop="41" />
       <File id="E6806D70-6552-45E9-A172-18235B6F7218/d:Content/f:Site.css" caret="934" fromTop="36" />
@@ -48,13 +47,14 @@
       <File id="E6806D70-6552-45E9-A172-18235B6F7218/d:Models/f:EmployeeModel.cs" caret="1574" fromTop="35" />
       <File id="E6806D70-6552-45E9-A172-18235B6F7218/d:Models/f:EmployeeModel.cs" caret="1322" fromTop="18" />
       <File id="E6806D70-6552-45E9-A172-18235B6F7218/d:Models/f:EmployeeModel.cs" caret="179" fromTop="7" />
-      <File id="283FA664-600E-4DE3-8FF6-55EAF93C9617/f:EmployeeTests.cs" caret="7695" fromTop="35" />
       <File id="283FA664-600E-4DE3-8FF6-55EAF93C9617/f:EmployeeTests.cs" caret="7287" fromTop="27" />
       <File id="E6806D70-6552-45E9-A172-18235B6F7218/d:Controllers/f:EmployeeController.cs" caret="687" fromTop="25" />
       <File id="283FA664-600E-4DE3-8FF6-55EAF93C9617/f:EmployeeTests.cs" caret="3205" fromTop="49" />
       <File id="E6806D70-6552-45E9-A172-18235B6F7218/d:Controllers/f:EmployeeController.cs" caret="1000" fromTop="31" />
       <File id="E6806D70-6552-45E9-A172-18235B6F7218/d:Controllers/f:EmployeeController.cs" caret="1051" fromTop="34" />
       <File id="283FA664-600E-4DE3-8FF6-55EAF93C9617/f:EmployeeTests.cs" caret="7432" fromTop="23" />
+      <File id="283FA664-600E-4DE3-8FF6-55EAF93C9617/f:EmployeeTests.cs" caret="7710" fromTop="30" />
+      <File id="283FA664-600E-4DE3-8FF6-55EAF93C9617/f:EmployeeTests.cs" caret="7710" fromTop="30" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -64,8 +64,7 @@
     <Providers />
   </UnitTestRunner>
   <UnitTestRunnerNUnit>
-    <NUnitInstallDir IsNull="False">
-    </NUnitInstallDir>
+    <NUnitInstallDir>C:\Program Files\NUnit 2.6\bin\net-2.0\</NUnitInstallDir>
     <UseAddins>Never</UseAddins>
   </UnitTestRunnerNUnit>
   <CompletionStatisticsManager>
